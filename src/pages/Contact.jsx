@@ -1,4 +1,10 @@
 function Contact() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Form submission would be implemented here
+    alert('Thank you for your message! We will get back to you soon.');
+  };
+
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold text-gray-800 mb-6">Contact Us</h1>
@@ -27,7 +33,7 @@ function Contact() {
         </div>
         <div className="bg-gray-100 p-6 rounded-lg">
           <h2 className="text-2xl font-semibold mb-4">Send us a Message</h2>
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
               <input
