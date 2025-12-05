@@ -1,6 +1,6 @@
-# Dog Sitting Landing Page
+# Hello World Homepage
 
-A professional dog sitting service landing page built with React, Tailwind CSS, and React Router.
+A simple React application scaffold with routing and basic pages built with React, Tailwind CSS, and React Router.
 
 ## Features
 
@@ -8,17 +8,17 @@ A professional dog sitting service landing page built with React, Tailwind CSS, 
 - **Responsive Design**: Styled with Tailwind CSS for a mobile-first, responsive layout
 - **Client-Side Routing**: Uses React Router for seamless navigation between pages
 - **Multiple Pages**:
-  - Home: Hero section with service highlights
-  - About: Company mission and why choose us
-  - Services: Detailed service offerings with pricing
-  - Contact: Contact information and message form
+  - Home: Hello World landing page
+  - About: About page
+  - Services: Services page
+  - Contact: Contact page
 
 ## Tech Stack
 
 - **React**: 19.2.0
-- **React Router DOM**: 7.1.3
-- **Tailwind CSS**: 4.1.0
-- **Vite**: 7.2.6
+- **React Router DOM**: 7.10.1
+- **Tailwind CSS**: 4.1.17
+- **Vite**: 7.2.4
 - **Node.js**: v20+
 
 ## Getting Started
@@ -101,4 +101,4 @@ mindmap/
 
 ## License
 
-All rights reserved © 2024 PawsitiveCare Dog Sitting
+All rights reserved © 2024

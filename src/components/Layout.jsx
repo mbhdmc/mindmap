@@ -7,7 +7,7 @@ function Layout({ children }) {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-4">
             <Link to="/" className="text-2xl font-bold text-blue-600">
-              🐕 PawsitiveCare
+              Hello World App
             </Link>
             <div className="flex gap-6">
               <Link
@@ -43,7 +43,7 @@ function Layout({ children }) {
       </main>
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2024 PawsitiveCare Dog Sitting. All rights reserved.</p>
+          <p>&copy; 2024 Hello World App. All rights reserved.</p>
         </div>
       </footer>
     </div>
