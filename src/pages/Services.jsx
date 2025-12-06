@@ -1,28 +1,28 @@
 function Services() {
   const services = [
     {
-      title: "Daily Dog Walking",
-      description: "Regular walks to keep your dog active and happy",
-      features: ["30-60 minute walks", "Flexible scheduling", "GPS tracked routes"],
-      price: "Starting at $25/walk"
+      title: "Member Management",
+      description: "Complete customer relationship management",
+      features: ["Member profiles and history", "Subscription tracking", "Automated renewals"],
+      price: "Core Feature"
     },
     {
-      title: "Pet Sitting",
-      description: "In-home care while you're away",
-      features: ["Feeding and water", "Playtime and exercise", "Medication administration"],
-      price: "Starting at $45/visit"
+      title: "Class Scheduling",
+      description: "Manage classes, instructors, and bookings",
+      features: ["Class calendar", "Instructor assignments", "Attendance tracking"],
+      price: "Core Feature"
     },
     {
-      title: "Overnight Care",
-      description: "24-hour supervision and care",
-      features: ["Full day and night care", "Your home or ours", "Regular updates"],
-      price: "Starting at $85/night"
+      title: "Payment Processing",
+      description: "Handle payments and billing seamlessly",
+      features: ["Payment integration", "Invoicing", "Financial reports"],
+      price: "Core Feature"
     },
     {
-      title: "House Sitting",
-      description: "Complete home and pet care service",
-      features: ["Pet care included", "Home security", "Plant watering"],
-      price: "Starting at $100/night"
+      title: "Analytics Dashboard",
+      description: "Track studio performance and growth",
+      features: ["Revenue insights", "Member retention metrics", "Class popularity analysis"],
+      price: "Core Feature"
     }
   ];
 
@@ -33,7 +33,7 @@ function Services() {
           Our Services
         </h1>
         <p className="text-xl text-gray-600 mb-12 text-center max-w-2xl mx-auto">
-          Professional pet care services tailored to your needs
+          Comprehensive features to manage your yoga studio efficiently
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (

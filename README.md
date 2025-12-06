@@ -1,6 +1,6 @@
-# Dog Sitting Landing Page
+# Yoga Studio CRM
 
-A professional dog sitting service landing page built with React, Tailwind CSS, and React Router.
+A professional customer relationship management system for yoga studios built with React, Tailwind CSS, and React Router.
 
 ## Features
 
@@ -8,10 +8,10 @@ A professional dog sitting service landing page built with React, Tailwind CSS, 
 - **Responsive Design**: Styled with Tailwind CSS for a mobile-first, responsive layout
 - **Client-Side Routing**: Uses React Router for seamless navigation between pages
 - **Multiple Pages**:
-  - Home: Hero section with service highlights
-  - About: Company mission and why choose us
-  - Services: Detailed service offerings with pricing
-  - Contact: Contact information and message form
+  - Home: Landing page with CRM feature highlights
+  - About: System mission and key benefits
+  - Services: Detailed feature offerings
+  - Contact: Contact information and inquiry form
 
 ## Tech Stack
 
@@ -72,7 +72,7 @@ npm run preview
 ## Project Structure
 
 ```
-mindmap/
+yoga-studio-crm/
 ├── src/
 │   ├── components/
 │   │   └── Layout.jsx         # Main layout with navigation and footer
@@ -101,4 +101,4 @@ mindmap/
 
 ## License
 
-All rights reserved © 2024 PawsitiveCare Dog Sitting
+All rights reserved © 2024 Yoga Studio CRM

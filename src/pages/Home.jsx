@@ -6,10 +6,10 @@ function Home() {
       <div className="container mx-auto px-4 py-16">
         <div className="text-center">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Professional Dog Sitting Services
+            Yoga Studio CRM
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Your trusted partner in pet care. We provide loving, reliable care for your furry friends while you're away.
+            Manage your yoga studio with ease. A complete customer relationship management system for yoga instructors and studio owners.
           </p>
           <div className="flex gap-4 justify-center">
             <Link
@@ -28,24 +28,24 @@ function Home() {
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <div className="text-4xl mb-4">🐕</div>
-            <h3 className="text-xl font-semibold mb-2">Experienced Care</h3>
+            <div className="text-4xl mb-4">👥</div>
+            <h3 className="text-xl font-semibold mb-2">Member Management</h3>
             <p className="text-gray-600">
-              Years of experience caring for dogs of all sizes and breeds
+              Track and manage your studio members and their subscriptions
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <div className="text-4xl mb-4">❤️</div>
-            <h3 className="text-xl font-semibold mb-2">Loving Attention</h3>
+            <div className="text-4xl mb-4">📅</div>
+            <h3 className="text-xl font-semibold mb-2">Class Scheduling</h3>
             <p className="text-gray-600">
-              Your pets receive personalized care and plenty of love
+              Schedule classes, manage instructors, and track attendance
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <div className="text-4xl mb-4">📱</div>
-            <h3 className="text-xl font-semibold mb-2">Daily Updates</h3>
+            <div className="text-4xl mb-4">📊</div>
+            <h3 className="text-xl font-semibold mb-2">Analytics & Reports</h3>
             <p className="text-gray-600">
-              Regular photo and video updates so you stay connected
+              Get insights into your studio's performance and growth
             </p>
           </div>
         </div>
