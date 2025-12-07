@@ -34,6 +34,12 @@ function Layout({ children }) {
               >
                 Contact
               </Link>
+              <Link
+                to="/splash-builder"
+                className="text-gray-700 hover:text-blue-600 font-medium transition"
+              >
+                Splash Builder
+              </Link>
             </div>
           </div>
         </div>
