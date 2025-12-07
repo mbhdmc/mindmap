@@ -1,6 +1,6 @@
-# Dog Sitting Landing Page
+# Book Club Landing Page
 
-A professional dog sitting service landing page built with React, Tailwind CSS, and React Router.
+A professional book club landing page built with React, Tailwind CSS, and React Router.
 
 ## Features
 
@@ -8,10 +8,10 @@ A professional dog sitting service landing page built with React, Tailwind CSS, 
 - **Responsive Design**: Styled with Tailwind CSS for a mobile-first, responsive layout
 - **Client-Side Routing**: Uses React Router for seamless navigation between pages
 - **Multiple Pages**:
-  - Home: Hero section with service highlights
-  - About: Company mission and why choose us
-  - Services: Detailed service offerings with pricing
-  - Contact: Contact information and message form
+  - Home: Hero section with club highlights
+  - About: Club mission and community
+  - Services: Book club offerings and membership
+  - Contact: Contact information and inquiry form
 
 ## Tech Stack
 
@@ -101,4 +101,4 @@ mindmap/
 
 ## License
 
-All rights reserved © 2024 PawsitiveCare Dog Sitting
+All rights reserved © 2024 Book Club Community

@@ -9,14 +9,14 @@ function Contact() {
           <div className="bg-blue-50 p-8 rounded-lg mb-8">
             <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
             <p className="text-gray-700 mb-6">
-              Ready to book our services or have questions? We'd love to hear from you!
+              Interested in joining our book club or have questions? We'd love to hear from you!
             </p>
             <div className="space-y-4">
               <div className="flex items-center">
                 <span className="text-2xl mr-4">📧</span>
                 <div>
                   <p className="font-semibold">Email</p>
-                  <p className="text-gray-600">contact@dogsitting.com</p>
+                  <p className="text-gray-600">contact@bookclub.com</p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -30,7 +30,7 @@ function Contact() {
                 <span className="text-2xl mr-4">📍</span>
                 <div>
                   <p className="font-semibold">Location</p>
-                  <p className="text-gray-600">Serving the greater metropolitan area</p>
+                  <p className="text-gray-600">Meetings at local library and online</p>
                 </div>
               </div>
             </div>
@@ -68,7 +68,7 @@ function Contact() {
                   id="message"
                   rows="4"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  placeholder="Tell us about your pet care needs..."
+                  placeholder="Tell us about your reading interests..."
                 ></textarea>
               </div>
               <button
