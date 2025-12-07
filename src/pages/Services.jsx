@@ -1,28 +1,40 @@
 function Services() {
   const services = [
     {
-      title: "Monthly Meetings",
-      description: "Regular book discussions and community gatherings",
-      features: ["In-person and virtual options", "Facilitated discussions", "Book selection voting"],
-      price: "Free for members"
+      title: "Step Counting Engine",
+      description: "Advanced step tracking with real-time updates",
+      features: ["Accurate step detection", "Real-time tracking", "Manual step adjustment"],
+      status: "Active"
     },
     {
-      title: "Book Selection Service",
-      description: "Personalized book recommendations",
-      features: ["Tailored to your preferences", "Genre exploration", "New release updates"],
-      price: "Included with membership"
+      title: "Activity Data Storage",
+      description: "Secure storage of your fitness data",
+      features: ["Local data persistence", "Historical data access", "Data export capabilities"],
+      status: "Active"
     },
     {
-      title: "Author Events",
-      description: "Exclusive access to author talks and Q&A sessions",
-      features: ["Meet your favorite authors", "Book signings", "Early access to new releases"],
-      price: "Special member pricing"
+      title: "User Profile & Goal Management",
+      description: "Personalized fitness goals and preferences",
+      features: ["Custom daily goals", "Weekly targets", "Profile customization"],
+      status: "Active"
     },
     {
-      title: "Reading Groups",
-      description: "Small group discussions for deeper engagement",
-      features: ["Genre-specific groups", "Flexible meeting times", "Online forums"],
-      price: "Included with membership"
+      title: "Activity Dashboard & Reporting",
+      description: "Comprehensive analytics and insights",
+      features: ["Visual progress tracking", "Statistical analysis", "Achievement milestones"],
+      status: "Active"
+    },
+    {
+      title: "Notification & Reminder System",
+      description: "Stay motivated with smart reminders",
+      features: ["Goal reminders", "Achievement notifications", "Customizable alerts"],
+      status: "Active"
+    },
+    {
+      title: "Third-Party Health Integration",
+      description: "Connect with popular health platforms",
+      features: ["Google Fit support", "Apple Health integration", "Fitbit connectivity"],
+      status: "Coming Soon"
     }
   ];
 
@@ -30,10 +42,10 @@ function Services() {
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold text-gray-900 mb-4 text-center">
-          Our Services
+          Core Features
         </h1>
         <p className="text-xl text-gray-600 mb-12 text-center max-w-2xl mx-auto">
-          Membership benefits and club activities for book lovers
+          Comprehensive features to track and improve your fitness journey
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
@@ -49,7 +61,9 @@ function Services() {
                 ))}
               </ul>
               <div className="border-t pt-4 mt-4">
-                <p className="text-lg font-semibold text-blue-600">{service.price}</p>
+                <p className={`text-lg font-semibold ${service.status === 'Active' ? 'text-green-600' : 'text-orange-600'}`}>
+                  {service.status}
+                </p>
               </div>
             </div>
           ))}
