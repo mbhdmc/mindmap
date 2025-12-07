@@ -9,33 +9,33 @@ function About() {
           <div className="bg-blue-50 p-8 rounded-lg mb-8">
             <h2 className="text-2xl font-semibold mb-4">Our Mission</h2>
             <p className="text-gray-700 mb-4">
-              We are dedicated to providing the highest quality care for your beloved pets. 
-              Our mission is to give you peace of mind while you're away, knowing that your 
-              furry family members are in safe, loving hands.
+              We are dedicated to fostering a vibrant community of readers and book lovers. 
+              Our mission is to create a welcoming space where people can discover great books, 
+              share their thoughts, and connect with fellow readers who share their passion for literature.
             </p>
           </div>
           <div className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">Why Choose Us?</h2>
+            <h2 className="text-2xl font-semibold mb-4">Why Join Us?</h2>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="text-blue-600 mr-2">✓</span>
-                <span className="text-gray-700">Certified and insured professional pet sitters</span>
+                <span className="text-gray-700">Thoughtfully curated book selections across all genres</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-600 mr-2">✓</span>
-                <span className="text-gray-700">Flexible scheduling to meet your needs</span>
+                <span className="text-gray-700">Monthly meetings and engaging discussions</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-600 mr-2">✓</span>
-                <span className="text-gray-700">Emergency veterinary care coordination</span>
+                <span className="text-gray-700">Exclusive author events and Q&A sessions</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-600 mr-2">✓</span>
-                <span className="text-gray-700">Background-checked and trained staff</span>
+                <span className="text-gray-700">Welcoming community for readers of all levels</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-600 mr-2">✓</span>
-                <span className="text-gray-700">Customized care plans for each pet</span>
+                <span className="text-gray-700">Book recommendations tailored to your interests</span>
               </li>
             </ul>
           </div>

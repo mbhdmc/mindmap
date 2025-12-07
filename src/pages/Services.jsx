@@ -1,28 +1,28 @@
 function Services() {
   const services = [
     {
-      title: "Daily Dog Walking",
-      description: "Regular walks to keep your dog active and happy",
-      features: ["30-60 minute walks", "Flexible scheduling", "GPS tracked routes"],
-      price: "Starting at $25/walk"
+      title: "Monthly Meetings",
+      description: "Regular book discussions and community gatherings",
+      features: ["In-person and virtual options", "Facilitated discussions", "Book selection voting"],
+      price: "Free for members"
     },
     {
-      title: "Pet Sitting",
-      description: "In-home care while you're away",
-      features: ["Feeding and water", "Playtime and exercise", "Medication administration"],
-      price: "Starting at $45/visit"
+      title: "Book Selection Service",
+      description: "Personalized book recommendations",
+      features: ["Tailored to your preferences", "Genre exploration", "New release updates"],
+      price: "Included with membership"
     },
     {
-      title: "Overnight Care",
-      description: "24-hour supervision and care",
-      features: ["Full day and night care", "Your home or ours", "Regular updates"],
-      price: "Starting at $85/night"
+      title: "Author Events",
+      description: "Exclusive access to author talks and Q&A sessions",
+      features: ["Meet your favorite authors", "Book signings", "Early access to new releases"],
+      price: "Special member pricing"
     },
     {
-      title: "House Sitting",
-      description: "Complete home and pet care service",
-      features: ["Pet care included", "Home security", "Plant watering"],
-      price: "Starting at $100/night"
+      title: "Reading Groups",
+      description: "Small group discussions for deeper engagement",
+      features: ["Genre-specific groups", "Flexible meeting times", "Online forums"],
+      price: "Included with membership"
     }
   ];
 
@@ -33,7 +33,7 @@ function Services() {
           Our Services
         </h1>
         <p className="text-xl text-gray-600 mb-12 text-center max-w-2xl mx-auto">
-          Professional pet care services tailored to your needs
+          Membership benefits and club activities for book lovers
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (

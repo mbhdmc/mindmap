@@ -6,10 +6,10 @@ function Home() {
       <div className="container mx-auto px-4 py-16">
         <div className="text-center">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Professional Dog Sitting Services
+            Welcome to Our Book Club
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Your trusted partner in pet care. We provide loving, reliable care for your furry friends while you're away.
+            Join our community of readers. Discover new books, share insights, and connect with fellow book lovers.
           </p>
           <div className="flex gap-4 justify-center">
             <Link
@@ -28,24 +28,24 @@ function Home() {
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <div className="text-4xl mb-4">🐕</div>
-            <h3 className="text-xl font-semibold mb-2">Experienced Care</h3>
+            <div className="text-4xl mb-4">📖</div>
+            <h3 className="text-xl font-semibold mb-2">Diverse Selection</h3>
             <p className="text-gray-600">
-              Years of experience caring for dogs of all sizes and breeds
+              Explore a wide range of genres and discover your next favorite book
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <div className="text-4xl mb-4">❤️</div>
-            <h3 className="text-xl font-semibold mb-2">Loving Attention</h3>
+            <div className="text-4xl mb-4">💬</div>
+            <h3 className="text-xl font-semibold mb-2">Engaging Discussions</h3>
             <p className="text-gray-600">
-              Your pets receive personalized care and plenty of love
+              Join thoughtful conversations and share perspectives with fellow readers
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
-            <div className="text-4xl mb-4">📱</div>
-            <h3 className="text-xl font-semibold mb-2">Daily Updates</h3>
+            <div className="text-4xl mb-4">🌟</div>
+            <h3 className="text-xl font-semibold mb-2">Community Events</h3>
             <p className="text-gray-600">
-              Regular photo and video updates so you stay connected
+              Participate in author talks, reading events, and social gatherings
             </p>
           </div>
         </div>
