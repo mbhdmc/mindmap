@@ -1,11 +1,11 @@
-import StepCountingEngine from './StepCountingEngine';
+import useStepCountingEngine from './StepCountingEngine';
 
 /**
  * Step Counter Display Component
- * UI component that uses the Step Counting Engine
+ * UI component that uses the Step Counting Engine hook
  */
 const StepCounter = () => {
-  const engine = StepCountingEngine({ onStepUpdate: () => {} });
+  const engine = useStepCountingEngine();
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-6 max-w-md mx-auto">

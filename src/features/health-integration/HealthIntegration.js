@@ -21,48 +21,52 @@ export const HealthIntegration = {
   },
 
   // Connect to health platform
+  // NOTE: This is a PLACEHOLDER implementation for demonstration purposes only
+  // Real implementation would require OAuth2 flow and platform-specific SDKs
   connectPlatform: async (platform) => {
     console.log(`Attempting to connect to ${platform}`);
     
-    // Placeholder for OAuth/API connection
+    // Placeholder for OAuth/API connection - NOT YET IMPLEMENTED
     return new Promise((resolve) => {
       setTimeout(() => {
         // Mock connection response
         resolve({
           success: false,
           platform,
-          message: 'Integration not yet implemented'
+          message: 'Integration not yet implemented - this is a placeholder'
         });
       }, 1000);
     });
   },
 
   // Sync data from platform
+  // NOTE: PLACEHOLDER - Real implementation would use platform-specific APIs
   syncData: async (platform) => {
     console.log(`Syncing data from ${platform}`);
     
-    // Placeholder for data sync
+    // Placeholder for data sync - NOT YET IMPLEMENTED
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve({
           success: false,
           data: null,
-          message: 'Sync not yet implemented'
+          message: 'Sync not yet implemented - this is a placeholder'
         });
       }, 1000);
     });
   },
 
   // Export data to platform
+  // NOTE: PLACEHOLDER - Real implementation would use platform-specific APIs
   exportData: async (platform, data) => {
     console.log(`Exporting data to ${platform}`, data);
     
-    // Placeholder for data export
+    // Placeholder for data export - NOT YET IMPLEMENTED
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve({
           success: false,
-          message: 'Export not yet implemented'
+          message: 'Export not yet implemented - this is a placeholder'
         });
       }, 1000);
     });

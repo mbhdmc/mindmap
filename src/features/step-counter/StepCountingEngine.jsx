@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 
 /**
- * Step Counting Engine Component
- * Core component for tracking and managing step count data
+ * Step Counting Engine Hook
+ * Custom React hook for tracking and managing step count data
  */
-const StepCountingEngine = ({ onStepUpdate }) => {
+const useStepCountingEngine = ({ onStepUpdate } = {}) => {
   const [steps, setSteps] = useState(0);
   const [isTracking, setIsTracking] = useState(false);
 
@@ -35,4 +35,4 @@ const StepCountingEngine = ({ onStepUpdate }) => {
   };
 };
 
-export default StepCountingEngine;
+export default useStepCountingEngine;
