@@ -1,5 +1,9 @@
 import { useState } from 'react';
 
+// Constants for validation
+const MAX_MESSAGE_LENGTH = 500;
+const MIN_MESSAGE_LENGTH = 10;
+
 function ContactForm() {
   // State variables for form inputs
   const [name, setName] = useState('');
@@ -26,15 +30,16 @@ function ContactForm() {
 
   // Phone validation regex (optional - supports various formats)
   const validatePhone = (phone) => {
-    // Accept formats like: (123) 456-7890, 123-456-7890, 1234567890, +1 123 456 7890
-    const phoneRegex = /^[+]?[(]?[0-9]{1,4}[)]?[-\s.]?[(]?[0-9]{1,4}[)]?[-\s.]?[0-9]{1,5}[-\s.]?[0-9]{1,6}$/;
-    return phoneRegex.test(phone.trim());
+    // Simplified phone validation - accepts 10+ digits with optional formatting
+    // Examples: (123) 456-7890, 123-456-7890, 1234567890, +1 123 456 7890
+    const digitsOnly = phone.replace(/\D/g, '');
+    return digitsOnly.length >= 10 && digitsOnly.length <= 15;
   };
 
   // Message validation (min 10 characters, max 500 characters)
   const validateMessage = (message) => {
     const trimmedMessage = message.trim();
-    return trimmedMessage.length >= 10 && trimmedMessage.length <= 500;
+    return trimmedMessage.length >= MIN_MESSAGE_LENGTH && trimmedMessage.length <= MAX_MESSAGE_LENGTH;
   };
 
   // Validate all fields
@@ -74,10 +79,10 @@ function ContactForm() {
       newErrors.message = 'Message is required';
       isValid = false;
     } else if (!validateMessage(message)) {
-      if (message.trim().length < 10) {
-        newErrors.message = 'Message must be at least 10 characters';
+      if (message.trim().length < MIN_MESSAGE_LENGTH) {
+        newErrors.message = `Message must be at least ${MIN_MESSAGE_LENGTH} characters`;
       } else {
-        newErrors.message = 'Message must not exceed 500 characters';
+        newErrors.message = `Message must not exceed ${MAX_MESSAGE_LENGTH} characters`;
       }
       isValid = false;
     }
@@ -130,8 +135,9 @@ function ContactForm() {
       setTimeout(() => {
         setStatus('idle');
       }, 5000);
-    } catch {
+    } catch (error) {
       // Display error message
+      console.error('Form submission error:', error);
       setStatus('error');
 
       // Reset status after 5 seconds
@@ -232,7 +238,7 @@ function ContactForm() {
           <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
             Message <span className="text-red-500">*</span>
             <span className="text-gray-400 text-xs ml-2">
-              ({message.length}/500 characters, min 10)
+              ({message.length}/{MAX_MESSAGE_LENGTH} characters, min {MIN_MESSAGE_LENGTH})
             </span>
           </label>
           <textarea
@@ -245,7 +251,7 @@ function ContactForm() {
             }`}
             placeholder="Tell us about your reading interests..."
             disabled={status === 'submitting'}
-            maxLength={500}
+            maxLength={MAX_MESSAGE_LENGTH}
           />
           {errors.message && (
             <p className="mt-1 text-sm text-red-600">{errors.message}</p>
@@ -269,6 +275,7 @@ function ContactForm() {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
+                aria-hidden="true"
               >
                 <circle
                   className="opacity-25"
