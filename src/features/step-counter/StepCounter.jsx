@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import StepCountingEngine from './StepCountingEngine';
 
 /**
@@ -6,8 +5,7 @@ import StepCountingEngine from './StepCountingEngine';
  * UI component that uses the Step Counting Engine
  */
 const StepCounter = () => {
-  const [totalSteps, setTotalSteps] = useState(0);
-  const engine = StepCountingEngine({ onStepUpdate: setTotalSteps });
+  const engine = StepCountingEngine({ onStepUpdate: () => {} });
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-6 max-w-md mx-auto">

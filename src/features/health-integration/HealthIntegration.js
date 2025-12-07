@@ -21,11 +21,11 @@ export const HealthIntegration = {
   },
 
   // Connect to health platform
-  connectPlatform: async (platform, credentials) => {
+  connectPlatform: async (platform) => {
     console.log(`Attempting to connect to ${platform}`);
     
     // Placeholder for OAuth/API connection
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       setTimeout(() => {
         // Mock connection response
         resolve({

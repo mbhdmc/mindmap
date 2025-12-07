@@ -7,7 +7,6 @@ import { UserProfileManager } from '../user-profile';
  * Displays activity statistics and reports
  */
 const ActivityDashboard = () => {
-  const [activities, setActivities] = useState([]);
   const [profile, setProfile] = useState(UserProfileManager.defaultProfile);
   const [stats, setStats] = useState({
     totalSteps: 0,
@@ -16,21 +15,16 @@ const ActivityDashboard = () => {
   });
 
   useEffect(() => {
-    loadDashboardData();
-  }, []);
-
-  const loadDashboardData = () => {
+    // Load data on mount
     const loadedActivities = ActivityStorage.getAllActivities();
     const loadedProfile = UserProfileManager.getProfile();
     
-    setActivities(loadedActivities);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setProfile(loadedProfile);
-    calculateStats(loadedActivities);
-  };
 
-  const calculateStats = (activityData) => {
-    const totalSteps = activityData.reduce((sum, activity) => sum + (activity.steps || 0), 0);
-    const dailyAverage = activityData.length > 0 ? Math.round(totalSteps / activityData.length) : 0;
+    // Calculate stats
+    const totalSteps = loadedActivities.reduce((sum, activity) => sum + (activity.steps || 0), 0);
+    const dailyAverage = loadedActivities.length > 0 ? Math.round(totalSteps / loadedActivities.length) : 0;
     
     // Calculate weekly total (last 7 days)
     const weekAgo = new Date();
@@ -39,7 +33,7 @@ const ActivityDashboard = () => {
     const weeklyTotal = weeklyActivities.reduce((sum, activity) => sum + (activity.steps || 0), 0);
 
     setStats({ totalSteps, dailyAverage, weeklyTotal });
-  };
+  }, []);
 
   return (
     <div className="max-w-4xl mx-auto p-6">
